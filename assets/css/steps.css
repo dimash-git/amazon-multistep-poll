@@ -1,0 +1,98 @@
+.step-app > .step-steps {
+  margin: 0;
+  padding: 0;
+  /*display: flex;*/
+  display: none;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.step-app > .step-steps > li {
+  list-style: none;
+  flex: 1;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: #333;
+  background-color: #e5e5e5;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+.step-app > .step-steps > li:hover {
+  background-color: #ddd;
+}
+.step-app > .step-steps > li:last-child a {
+  border: none;
+}
+.step-app > .step-steps > li.active {
+  background-color: #01c750;
+  color: #fff;
+}
+.step-app > .step-steps > li.error {
+  background-color: #e7505a;
+  color: #fff;
+}
+.step-app > .step-steps > li.done {
+  background-color: #67b389;
+  color: #fff;
+}
+.step-app > .step-steps > li > .number {
+  background: #fff;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 3px;
+  color: #333;
+}
+.step-app > .step-content {
+  border: 1px solid #e5e5e5;
+  padding: 0.5em 1.5em;
+  border-top: 0;
+}
+.step-app > .step-content-loading,
+.step-app > .step-content-error {
+  border: 1px solid #e5e5e5;
+  padding: 1.5em;
+  display: none;
+  border-top: 0;
+  min-height: 550px;
+}
+.step-app > .step-content-loading > .icon,
+.step-app > .step-content-error > .icon {
+  padding: 0;
+  position: relative;
+}
+.step-app > .step-content-loading > .loading-message,
+.step-app > .step-content-error > .error-message {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.step-app > .step-content > .step-tab-panel {
+  margin: 1em 0 3em 0;
+  display: none;
+}
+.step-app > .step-content > .step-tab-panel.active {
+  display: block;
+}
+.step-footer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.step-btn {
+  width: 100%;
+  padding: 1.25em;
+/*  color: #333;*/
+color: #fff;
+  text-decoration: none;
+  background: #757171;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 767px) {
+  .step-app > .step-content {
+    padding: 1.5em;
+  }
+}

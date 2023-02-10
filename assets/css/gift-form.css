@@ -1,0 +1,462 @@
+input {
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  padding: 0.5em 1em;
+  margin: 0.25em 0;
+  line-height: 30px;
+  border-radius: 4px;
+}
+input:focus {
+  outline: none !important;
+  border: 2px solid #215b32;
+  border-radius: 4px;
+}
+.step-btn {
+  width: unset;
+}
+.btn-left {
+  width: unset;
+}
+.btn-right {
+  min-width: 50% !important;
+}
+.btn-checkout {
+  color: #fff !important;
+  background: #215b32 !important;
+}
+.btn-next {
+  color: #fff !important;
+  background: #000;
+}
+.btn-next:disabled {
+  color: #000 !important;
+  background-color: #c0c0c0 !important;
+}
+.gift-form .step-content {
+  background: rgba(255, 255, 255, 0.95);
+}
+.gift-form .step-content-loading {
+  background: rgba(255, 255, 255, 0.95);
+}
+.gift-form .step-content-error {
+  background: rgba(255, 255, 255, 0.95);
+}
+.gift-form h1 {
+  color: rgb(20, 20, 20);
+}
+.gift-form-steps {
+  margin: 0 auto;
+  width: unset;
+}
+
+.valid-input {
+  border: 1px solid green;
+  border-radius: 4px;
+  background: rgba(0, 200, 50, 0.025);
+}
+
+label {
+  background: #f5f5f5;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+.gift_lookup {
+  padding: 1.5em 0;
+}
+.gift_lookup > .order-format {
+  font-size: 11px;
+  font-weight: 500;
+  padding-left: 1em;
+}
+.order-lookup > .order-lookup-qualify > ul {
+  margin: 0;
+  padding: 0.5em 2em;
+}
+.order-lookup > .order-lookup-qualify > ul > li {
+  font-size: 11px;
+}
+.product-select {
+  width: 100%;
+}
+.product-select p {
+  font-size: 13px;
+  line-height: 18px;
+}
+.product-select h1 {
+  font-size: 30px;
+}
+.selectable-label {
+  display: block;
+  width: 100%;
+}
+.selectable-label > input {
+  /* HIDE RADIO */
+  display: none;
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.selectable-label > input + .selectable-product {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.selectable-label > input:checked + .selectable-product {
+  /* (RADIO CHECKED) DIV STYLES */
+  border: 2px solid #4d994e;
+  background-color: rgba(92, 142, 81, 0.2);
+}
+
+.selectable-label > input:checked + .selectable-product:before {
+  font-family: "FontAwesome";
+  content: "\f14a";
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  color: #4d994e;
+}
+
+.selectable-product-info {
+  margin-top: 1em;
+  margin-left: 0;
+}
+.selectable-product > img {
+  margin: 0 auto;
+  width: 120px;
+  display: block;
+}
+.selectable-product-info > h1 {
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  color: #202020;
+  font-size: 15px !important;
+}
+.selectable-product-info > p {
+  color: #505050;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+/**
+ * order-lookup-panel
+ */
+.order-lookup-panel {
+  padding: 0;
+}
+.order-lookup-panel > h1 {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+.order-lookup-panel > p {
+  padding: 1em 0;
+  font-weight: 400;
+}
+
+.order-lookup > .gift_lookup > .error {
+  background: #c0392b;
+  padding: 1em;
+  color: #f0f0f0;
+  margin: 0 0 1em 0;
+  display: none;
+}
+
+.order-lookup-panel > .amazon-logo {
+  margin: 0 auto;
+  width: 150px;
+  padding: 1em 0;
+}
+
+.order-lookup-panel > .order-lookup-panel-disclaimer {
+  font-size: 12px;
+}
+
+/**
+ * review
+ */
+.review h1 {
+  font-size: 30px;
+}
+.review > .review-product-image > img {
+  display: block;
+  margin: 0 auto;
+  height: 120px;
+}
+
+.review > .review-body > .review-product-comment > textarea {
+  font-size: 15px;
+  width: 100%;
+  resize: none;
+  min-height: 12em;
+  border: 1px solid #ebebeb;
+  outline: none !important;
+  line-height: 20px;
+  padding: 1em;
+}
+
+.review > .review-body > .review-product-comment > textarea :focus {
+  border: 1px solid #215b32;
+}
+
+/**
+* gift select
+*/
+.gift-select h1 {
+  font-size: 30px;
+}
+
+.gift-select > p:first-child {
+}
+
+.gift-select > .free-gift-disclaimer {
+  font-weight: 900;
+  padding: 0.25em 0.25em;
+  font-size: 13px;
+  margin: 0 0.5em;
+}
+
+.gift-select > .free-gift-disclaimer h3 {
+  margin: 1em 0;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/**
+ * coupon
+ */
+.coupon > .coupon-gift {
+  margin-bottom: 1em;
+}
+.coupon > .coupon-gift > img {
+  position: relative;
+  width: 80px;
+}
+.coupon > .coupon-gift > .coupon-gift-title {
+  font-size: 20px;
+  display: contents;
+  font-weight: 500;
+}
+
+.coupon > .coupon-body > .coupon-body-coupon {
+  text-transform: uppercase;
+  background: rgba(246, 229, 141, 0.6);
+  border: 2px dashed #505050;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 24px;
+}
+
+/**
+ * Amazon review
+ */
+.amazon-review h1 {
+  font-size: 29px;
+}
+.amazon-review > .amazon-review-steps {
+  width: unset;
+}
+.amazon-review
+  > .amazon-review-steps
+  > .amazon-review-step
+  > .amazon-review-step-title {
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 6px;
+}
+
+.amazon-review > .amazon-review-steps > .amazon-review-step > button,
+.amazon-review > .amazon-review-steps > .amazon-review-step > a > button {
+  color: #fff;
+  /*background: #34495e;*/
+  background: rgba(33, 91, 50, 0.9);
+  padding: 1.25em;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.amazon-review > .amazon-review-steps > .amazon-review-step > button:hover,
+.amazon-review > .amazon-review-steps > .amazon-review-step > a > button:hover {
+  background: rgba(0, 0, 0, 1);
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.amazon-review
+  > .amazon-review-steps
+  > .amazon-review-step
+  > a
+  > button:disabled {
+  color: #fff;
+  background-color: rgba(33, 91, 50, 0.25);
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.amazon-review
+  > .amazon-review-steps
+  > .amazon-review-step
+  > a
+  > button
+  .copied {
+  color: #fff;
+  background-color: #cacaca;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+/**
+ * contact support
+ */
+
+.contact-support > .contact-support-button > a > button {
+  color: #fff;
+  background: #215b32;
+  padding: 1.25em;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-support > .contact-support-review {
+  text-align: center;
+  padding: 1em 0 1em 0;
+  font-size: 11px;
+  color: black;
+}
+
+.contact-support h1 {
+  font-size: 30px;
+}
+
+/**
+ * Star ratings
+ */
+.show-result {
+  margin: 10px;
+  padding: 10px;
+  color: green;
+  font-size: 20px;
+}
+
+.star-rating s.active {
+  color: #ffd429;
+}
+.star-rating:hover s {
+  color: #ffd429;
+}
+.star-rating:hover s:before {
+  content: "\2605";
+}
+.star-rating s:hover ~ s:before {
+  content: "\2606";
+}
+
+.star-rating s {
+  width: 100%;
+  color: #c0c0c0;
+  font-size: 60px;
+  cursor: default;
+  text-decoration: none;
+  line-height: 60px;
+}
+.star-rating {
+  margin: 0 auto;
+}
+
+.star-rating s:hover:before,
+.star-rating s.active:before {
+  content: "\2605";
+}
+.star-rating s:before {
+  content: "\2606";
+}
+
+.review-product-rating {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .review-product-rating {
+    display: flex;
+  }
+  .star-rating s:before {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .btn-left {
+    width: 100% !important;
+  }
+  .star-rating s {
+    font-size: 60px;
+  }
+  .buttons {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .step-btn {
+    margin: 0;
+    width: 50%;
+  }
+  .gift-form-steps {
+    width: 550px;
+  }
+
+  .selectable-label > input:checked + .selectable-product:before {
+    top: 1.75em;
+  }
+  .amazon-review > .amazon-review-steps {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .selectable-product > img {
+    vertical-align: top;
+    margin: 0 auto;
+    width: 19%;
+    max-width: 7em;
+    padding-left: 1em;
+    display: inline-block;
+  }
+  .selectable-product-info {
+    width: 75%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    display: inline-block;
+  }
+
+  .review > .review-product-image > img {
+    height: 100px;
+  }
+
+  .review > .review-body > .review-product-comment > textarea {
+    min-height: 8em;
+  }
+
+  .review-product-rating {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .gift-select > .free-gift-disclaimer h3 {
+    font-size: 16px;
+  }
+}

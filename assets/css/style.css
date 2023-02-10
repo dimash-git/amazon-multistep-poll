@@ -1,0 +1,494 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+}
+.gift-form {
+  margin: 2em 0 8em 0;
+}
+
+header {
+  background: #fff;
+  height: 5em;
+}
+header > a > .logo {
+  color: #215b32;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  position: relative;
+  top: 2px;
+}
+header img {
+  padding: 12px;
+  height: 100%;
+  display: block;
+}
+svg.logo {
+  padding-top: 10px;
+}
+.background {
+  background: #fff url("../img/PHONE.png") no-repeat
+    center center;
+  background-size: cover;
+  min-height: 90vh;
+}
+footer {
+  background: rgb(255, 255, 255);
+  height: 10vh;
+}
+.social-icon-row {
+  padding: 0.5em 0 0.25em 0;
+  text-align: center;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.link-row {
+  padding: 0.25em 0 0.5em 0;
+  text-align: center;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.social-icon-clickable {
+  color: rgb(0, 0, 0);
+}
+.social-icon-clickable :hover {
+  color: #215b32;
+}
+.social-icon-item {
+  font-size: 2.125em;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 90px;
+}
+ul.links {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+ul.links li {
+  width: 100%;
+}
+ul.links li a {
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width: 767px) {
+  .gift-form {
+    margin: 4em 0;
+  }
+
+  header > a > .logo {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .background {
+    min-height: 82vh;
+    background: #fff url("../img/DESKTOP.png") no-repeat center
+      center;
+    background-size: cover;
+  }
+  .social-icon-row {
+    padding: 0.5em 0 0.25em 0;
+    text-align: center;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+  .link-row {
+    padding: 0.25em 0 0.5em 0;
+    text-align: center;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+  .social-icon-item {
+    font-size: 2.125em;
+    padding: 5px;
+  }
+
+  .footer {
+    width: 50%;
+  }
+  ul.links {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 280px;
+    margin: 0 auto;
+  }
+  ul.links li {
+    width: 100%;
+  }
+  ul.links li a {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.cssload-dots {
+  padding: 5em 0em;
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  outline: 1px solid red;
+  filter: url(#goo);
+  -o-filter: url(#goo);
+  -ms-filter: url(#goo);
+  -webkit-filter: url(#goo);
+  -moz-filter: url(#goo);
+}
+
+.cssload-dot {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cssload-dot:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  border-radius: 49px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 50%;
+  transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  margin-left: -17.5px;
+  margin-top: -17.5px;
+}
+
+.cssload-dot:nth-child(5):before {
+  z-index: 100;
+  width: 44.5px;
+  height: 44.5px;
+  margin-left: -21.75px;
+  margin-top: -21.75px;
+  animation: cssload-dot-colors 4.6s ease infinite;
+  -o-animation: cssload-dot-colors 4.6s ease infinite;
+  -ms-animation: cssload-dot-colors 4.6s ease infinite;
+  -webkit-animation: cssload-dot-colors 4.6s ease infinite;
+  -moz-animation: cssload-dot-colors 4.6s ease infinite;
+}
+
+.cssload-dot:nth-child(1) {
+  animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+  -o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+  -ms-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+  -webkit-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+  -moz-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+}
+.cssload-dot:nth-child(1):before {
+  background-color: rgb(0, 0, 0);
+  animation: cssload-dot-move 4.6s 0s ease infinite;
+  -o-animation: cssload-dot-move 4.6s 0s ease infinite;
+  -ms-animation: cssload-dot-move 4.6s 0s ease infinite;
+  -webkit-animation: cssload-dot-move 4.6s 0s ease infinite;
+  -moz-animation: cssload-dot-move 4.6s 0s ease infinite;
+}
+
+.cssload-dot:nth-child(2) {
+  animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+  -o-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+  -ms-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+  -webkit-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+  -moz-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+}
+.cssload-dot:nth-child(2):before {
+  background-color: rgb(141, 179, 91);
+  animation: cssload-dot-move 4.6s 1.15s ease infinite;
+  -o-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+  -ms-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+  -webkit-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+  -moz-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+}
+
+.cssload-dot:nth-child(3) {
+  animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+  -o-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+  -ms-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+  -webkit-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+  -moz-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+}
+.cssload-dot:nth-child(3):before {
+  background-color: rgb(10, 10, 10);
+  animation: cssload-dot-move 4.6s 2.3s ease infinite;
+  -o-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+  -ms-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+  -webkit-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+  -moz-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+}
+
+.cssload-dot:nth-child(4) {
+  animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+  -o-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+  -ms-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+  -webkit-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+  -moz-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+}
+.cssload-dot:nth-child(4):before {
+  background-color: rgb(150, 235, 70);
+  animation: cssload-dot-move 4.6s 3.45s ease infinite;
+  -o-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+  -ms-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+  -webkit-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+  -moz-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+}
+
+@keyframes cssload-dot-move {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  18%,
+  22% {
+    -webkit-transform: translateY(-68px);
+    transform: translateY(-68px);
+  }
+  40%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes cssload-dot-move {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  18%,
+  22% {
+    -webkit-transform: translateY(-68px);
+  }
+  40%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes cssload-dot-colors {
+  0% {
+    background-color: rgb(156, 189, 94);
+  }
+  25% {
+    background-color: rgb(255, 50, 112);
+  }
+  50% {
+    background-color: rgb(32, 139, 241);
+  }
+  75% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: rgb(192, 240, 88);
+  }
+}
+
+@-webkit-keyframes cssload-dot-colors {
+  0% {
+    background-color: rgb(156, 189, 94);
+  }
+  25% {
+    background-color: rgb(255, 50, 112);
+  }
+  50% {
+    background-color: rgb(32, 139, 241);
+  }
+  75% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: rgb(192, 240, 88);
+  }
+}
+
+@keyframes cssload-dot-rotate-1 {
+  0% {
+    -webkit-transform: rotate(-105deg);
+    transform: rotate(-105deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes cssload-dot-rotate-1 {
+  0% {
+    -webkit-transform: rotate(-105deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+  }
+}
+
+@keyframes cssload-dot-rotate-2 {
+  0% {
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg);
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+  }
+}
+
+@-webkit-keyframes cssload-dot-rotate-2 {
+  0% {
+    -webkit-transform: rotate(165deg);
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+  }
+}
+
+@keyframes cssload-dot-rotate-3 {
+  0% {
+    -webkit-transform: rotate(435deg);
+    transform: rotate(435deg);
+  }
+  100% {
+    -webkit-transform: rotate(810deg);
+    transform: rotate(810deg);
+  }
+}
+
+@-webkit-keyframes cssload-dot-rotate-3 {
+  0% {
+    -webkit-transform: rotate(435deg);
+  }
+  100% {
+    -webkit-transform: rotate(810deg);
+  }
+}
+
+@keyframes cssload-dot-rotate-4 {
+  0% {
+    -webkit-transform: rotate(705deg);
+    transform: rotate(705deg);
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+    transform: rotate(1080deg);
+  }
+}
+
+@-webkit-keyframes cssload-dot-rotate-4 {
+  0% {
+    -webkit-transform: rotate(705deg);
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+  }
+}
+
+/* Edits */
+.step-tab-panel.active, .buttons-left.active{
+  display: block !important;
+}
+.spinner {
+  margin-bottom: 3px;
+}
+.buttons-left {
+  display: none;
+}
+.step-btn.green-bg {
+  background: #4d994e !important;
+}
+
+.free-gift-offers img{
+  max-width: 100%;
+}
+
+.offer {
+  background: #edeaea;
+  border: 3px solid #edeaea;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.offer .title {
+  margin: 10px 15px 0 15px;
+  font-size: 16px;
+}
+.offer-image {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.amazon-review-little-text {
+  text-align: center;
+    padding-top: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.coupon-image{
+  display: flex;
+  justify-content: center;
+}
+.coupon-heading {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.congrats h1 {
+  text-align: center;
+}
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px
+}
+.input-grid.grid-cols-three {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 7px;
+}
+.footer {
+  min-height: auto;
+  padding-top: 15px;
+}
+.green-offer {
+  background: #abd3b5;
+  border: 3px solid green;
+}
+.wo-review {
+  color: #000;
+}
+
+@media (min-width: 767px) {
+  .review-product-rating {
+    width: auto !important;
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .free-gift-offers img {
+    width: 150px;
+  }
+}
