@@ -13,5 +13,5 @@ If there is no such order, error message is showed as well as for the cases when
 5. Fill out Client Information and submit. Information is then posted to Google Sheet
 6. Show Thank You panel.
 
-Full Flow diagram: https://www.figma.com/file/8NvHcuxgtQg74FXqyTaePK/Flow?node-id=0%3A1&t=reaXtVS0bGNjRY8o-1
+Full Flow diagram: https://www.figma.com/file/8NvHcuxgtQg74FXqyTaePK/Flow?node-id=0%3A1&t=reaXtVS0bGNjRY8o-1 <br>
 Google Sheet: https://docs.google.com/spreadsheets/d/1xx_SAGfwbV-cssRkhiFtCfU1Y_ZKb3EI-0g1Y7Q8o4c/
